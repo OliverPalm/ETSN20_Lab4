@@ -17,6 +17,7 @@ public class Search {
             return;
         }
 
+        
         if (split_input[0].toLowerCase().equals("search")) {
             var regex = split_input[1];
             var file_name = split_input[2];
