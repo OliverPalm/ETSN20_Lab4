@@ -7,16 +7,16 @@ import java.lang.Error;
 public class Search {
 
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in); // Create a Scanner object
+        Scanner myObj = new Scanner(System.in);
 
- 
-String[] split_input = input.split(" ");
-        if (input.length() < 3) {
+        String input = myObj.nextLine();
+        String[] split_input = input.split(" ");
+
+        if (split_input.length < 3) {
             System.out.println("need more arguments");
             return;
         }
 
-        
         if (split_input[0].toLowerCase().equals("search")) {
             var regex = split_input[1];
             var file_name = split_input[2];
